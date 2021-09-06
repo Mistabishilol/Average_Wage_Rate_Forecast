@@ -1,0 +1,335 @@
+2021-08-30 17:39:20,556 ERROR Debug LU decomposition error.
+2021-08-30 17:39:20,857 ERROR Debug LU decomposition error.
+2021-08-30 17:51:00,346 ERROR Debug LU decomposition error.
+2021-09-03 09:31:08,141 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:08,213 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:08,285 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:08,396 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:08,471 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:08,818 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:08,917 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:09,100 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:09,153 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:09,258 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:09,377 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:09,534 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:09,835 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:10,041 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:10,365 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:10,842 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:10,923 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:11,016 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:11,097 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:11,205 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:11,355 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:11,576 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:11,878 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:12,068 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:12,120 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:12,355 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:12,471 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:12,826 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:13,072 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:13,435 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:13,747 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:14,231 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:14,282 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:14,379 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:14,454 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:14,604 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:14,874 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:15,230 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:15,620 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:16,269 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:16,373 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:16,661 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:16,932 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:17,444 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:17,789 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:18,300 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:18,827 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:20,019 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:20,080 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:20,296 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:20,351 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:20,624 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:20,869 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:21,185 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:21,465 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:21,857 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:21,968 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:22,269 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:22,423 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:22,799 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:23,119 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:23,449 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:23,799 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:31:24,373 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:38,425 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:38,517 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:38,612 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:38,727 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:38,802 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:39,086 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:39,169 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:39,348 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:39,401 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:39,545 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:39,716 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:39,915 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:40,152 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:40,322 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:40,647 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:41,070 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:41,145 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:41,232 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:41,314 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:41,422 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:41,592 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:41,814 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:42,047 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:42,251 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:42,301 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:42,542 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:42,692 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:42,992 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:43,206 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:43,579 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:43,981 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:44,630 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:44,699 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:44,847 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:44,946 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:45,155 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:45,424 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:45,857 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:46,259 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:46,876 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:46,988 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:47,306 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:47,587 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:48,373 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:48,876 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:49,443 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:50,149 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:51,165 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:51,225 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:51,493 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:51,550 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:51,821 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:52,023 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:52,395 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:52,675 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:53,101 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:53,243 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:53,625 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:53,777 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:54,142 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:54,445 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:54,768 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:55,257 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:32:55,862 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:42,203 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:42,271 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:42,345 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:42,437 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:42,513 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:42,828 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:42,931 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:43,115 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:43,162 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:43,259 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:43,373 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:43,577 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:43,888 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:44,073 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:44,395 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:44,873 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:44,960 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:45,038 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:45,118 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:45,224 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:45,369 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:45,562 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:45,851 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:46,067 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:46,115 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:46,328 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:46,431 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:46,703 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:47,019 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:47,619 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:48,018 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:48,494 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:48,551 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:48,659 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:48,732 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:48,933 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:49,201 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:49,622 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:50,292 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:50,948 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:51,066 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:51,513 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:51,763 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:52,397 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:52,743 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:53,207 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:53,701 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:55,144 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:55,198 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:55,534 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:55,660 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:56,174 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:56,472 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:56,943 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:57,457 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:58,348 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:58,478 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:59,009 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:59,231 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:59,597 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:36:59,907 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:37:00,265 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:37:00,699 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:37:01,322 ERROR Debug Out-of-sample operations in a model with a regression component require additional exogenous values via the `exog` argument.
+2021-09-03 09:50:19,390 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:19,453 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:19,528 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:19,622 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:19,701 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:19,969 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:20,054 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:20,230 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:20,281 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:20,382 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:20,496 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:20,689 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:20,994 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:21,289 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:22,016 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:22,603 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:22,739 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:22,828 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:22,905 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:23,008 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:23,350 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:23,598 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:23,993 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:24,204 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:24,263 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:24,545 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:24,651 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:24,903 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:25,149 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:25,547 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:25,891 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:26,307 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:26,363 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:26,468 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:26,569 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:26,865 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:27,121 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:27,517 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:27,951 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:28,512 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:28,614 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:28,892 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:29,103 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:29,549 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:29,894 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:30,284 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:30,694 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:31,555 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:31,602 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:31,795 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:31,852 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:32,108 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:32,331 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:32,621 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:32,888 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:33,267 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:33,371 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:33,640 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:33,794 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:34,148 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:34,452 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:34,978 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:35,373 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 09:50:35,988 ERROR Debug Provided exogenous values are not of the appropriate shape. Required (10, 1), got (6,).
+2021-09-03 10:18:13,124 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:13,203 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:13,279 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:13,390 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:13,474 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:13,754 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:13,847 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:14,031 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:14,092 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:14,197 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:14,314 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:14,464 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:14,668 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:14,840 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:15,203 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:15,655 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:15,757 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:15,859 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:15,960 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:16,104 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:16,287 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:16,530 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:16,772 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:17,173 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:17,241 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:17,495 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:17,637 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:17,981 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:18,216 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:18,589 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:18,890 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:19,453 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:19,517 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:19,630 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:19,712 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:19,880 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:20,109 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:20,443 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:20,830 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:21,376 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:21,500 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:21,880 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:22,092 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:22,557 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:23,198 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:23,604 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:24,067 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:24,976 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:25,030 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:25,226 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:25,289 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:25,562 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:25,800 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:26,133 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:26,474 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:26,903 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:27,021 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:27,305 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:27,448 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:27,826 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:28,151 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:28,500 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:28,885 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 10:18:29,476 ERROR Debug local variable 'MAE_SARIMA' referenced before assignment
+2021-09-03 18:44:57,758 ERROR Debug LU decomposition error.
+2021-09-03 18:44:58,003 ERROR Debug LU decomposition error.
+2021-09-03 19:04:55,299 ERROR Debug y_true and y_pred have different number of output (2!=1)
+2021-09-03 19:04:55,459 ERROR Debug y_true and y_pred have different number of output (2!=1)
+2021-09-03 19:04:55,623 ERROR Debug y_true and y_pred have different number of output (2!=1)
+2021-09-03 19:04:55,813 ERROR Debug y_true and y_pred have different number of output (2!=1)
+2021-09-03 19:48:08,878 ERROR Debug LU decomposition error.
+2021-09-03 19:48:09,205 ERROR Debug LU decomposition error.
+2021-09-03 19:59:29,358 ERROR Debug LU decomposition error.
+2021-09-03 19:59:29,680 ERROR Debug LU decomposition error.
+2021-09-03 21:45:39,216 ERROR Debug LU decomposition error.
+2021-09-06 09:34:52,514 ERROR Debug LU decomposition error.
