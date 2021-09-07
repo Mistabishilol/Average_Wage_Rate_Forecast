@@ -10,7 +10,7 @@ def data_load():
 
     # Загрузка базы прогнозирования.
     try:
-        fot_database = pd.read_csv('./Base/fot_database.csv', encoding = 'utf8', sep = '\t', index_col = 'report_date', parse_dates = True)
+        fot_database = pd.read_csv('./Base/fot_database.csv', encoding = 'utf8', sep = '\t', index_col = 'report_date', parse_dates = ['report_date'])
         print('Данные из базы планирования успешно загружены.')
     except:
         print('Ошибка загрузки данных из базы планирования.')
@@ -160,31 +160,38 @@ def forecasts_to_dataframe(
                             auto_choice_date,
                             auto_choice_models,
                             av_salary_fact,
-                            SNaive_final,
-                            St_m_final,
-                            HW_final,
-                            SARIMA_final,
-                            LSTM_final,
-                            Complex_final,
+                            SNaive_final_prediction,
+                            St_m_final_prediction,
+                            HW_final_prediction,
+                            SARIMA_final_prediction,
+                            LSTM_final_prediction,
+                            Complex_final_prediction,
                             SNaive_MAPE,
                             St_m_MAPE,
                             HW_MAPE,
                             SARIMA_MAPE,
                             LSTM_MAPE,
                             Complex_MAPE,
-                            best_trend_HW,
-                            best_seasonal_HW,
-                            best_p,
-                            best_d,
-                            best_q,
-                            best_P,
-                            best_D,
-                            best_Q,
-                            best_base_period
+                            HW_best_trend,
+                            HW_best_seasonal,
+                            SARIMA_best_p,
+                            SARIMA_best_d,
+                            SARIMA_best_q,
+                            SARIMA_best_P,
+                            SARIMA_best_D,
+                            SARIMA_best_Q,
+                            St_m_best_base_period
                             ):
     '''Сохранение прогнозов в датафрейм'''
     
-    forecasts = pd.DataFrame(data = (SNaive_final['av_salary'], St_m_final['av_salary'], HW_final['av_salary'], SARIMA_final['av_salary'], LSTM_final['av_salary'], Complex_final['av_salary'])).transpose()
+    forecasts = pd.DataFrame(data = (
+                                    SNaive_final_prediction['av_salary'],
+                                    St_m_final_prediction['av_salary'],
+                                    HW_final_prediction['av_salary'],
+                                    SARIMA_final_prediction['av_salary'],
+                                    LSTM_final_prediction['av_salary'],
+                                    Complex_final_prediction['av_salary'])
+                                    ).transpose()
 
     forecasts.columns = ['SNaive', 'St_m', 'HW', 'SARIMA', 'LSTM', 'Complex']
     forecasts['tb_gosb_segm_type'] = chosen_tb_gosb_segm_type
@@ -194,9 +201,9 @@ def forecasts_to_dataframe(
     forecasts['SARIMA_MAPE'] = SARIMA_MAPE
     forecasts['LSTM_MAPE'] = LSTM_MAPE
     forecasts['Complex_MAPE'] = Complex_MAPE
-    forecasts['St_m_param'] = f'{best_base_period}'
-    forecasts['HW_param'] = f'tr = {best_trend_HW}, se = {best_seasonal_HW}'
-    forecasts['SARIMA_param'] = f'({best_p}, {best_d}, {best_q}) x ({best_P}, {best_D}, {best_Q}, 12)'
+    forecasts['St_m_param'] = f'{St_m_best_base_period}'
+    forecasts['HW_param'] = f'tr = {HW_best_trend}, se = {HW_best_seasonal}'
+    forecasts['SARIMA_param'] = f'({SARIMA_best_p}, {SARIMA_best_d}, {SARIMA_best_q}) x ({SARIMA_best_P}, {SARIMA_best_D}, {SARIMA_best_Q}, 12)'
     forecasts['Train_period_start'] = train_data.index[0]
     forecasts['Train_period_end'] = train_data.index[-1]
     forecasts['Test_period_start'] = test_data.index[0]
@@ -204,7 +211,8 @@ def forecasts_to_dataframe(
     forecasts['Train_period_len'] = len(train_data)
     forecasts['Test_period_len'] = len(test_data)
     forecasts['Train_len / (Train+Test)_len'] = len(train_data) / len(av_salary_fact)
-    forecasts['Test_len / Forecast_len'] = len(test_data) / len(Complex_final)
+    forecasts['Test_len / Forecast_len'] = len(test_data) / len(Complex_final_prediction)
+    
     if auto_choice_date in ['yes', 'да']:
         forecasts['Period_type'] = 'Auto'
     else:

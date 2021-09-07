@@ -16,18 +16,19 @@ def HW_test(train_data, test_data, av_salary_fact, trend_dict, seasonal_dict):
     
     for i in trend_dict:
         for j in seasonal_dict:
-            try:
-                fitted_model_HW = ExponentialSmoothing(train_data[['av_salary']], trend = i, seasonal = j, seasonal_periods = 12).fit()
-                test_prediction_HW = fitted_model_HW.forecast(len(test_data))
-                MAE_HW = mean_absolute_error(test_data[['av_salary']], test_prediction_HW)
-                if MAE_HW < best_err_HW:
-                    best_err_HW = MAE_HW
-                    best_trend_HW = i
-                    best_seasonal_HW = j
-            except Exception as e:
-                print('Ошибка функции HW_test.')
-                err_log(e)
-                continue
+            #try:
+            fitted_model_HW = ExponentialSmoothing(train_data[['av_salary']], trend = i, seasonal = j, seasonal_periods = 12).fit()
+            test_prediction_HW = fitted_model_HW.forecast(len(test_data))
+
+            MAE_HW = mean_absolute_error(test_data[['av_salary']], test_prediction_HW)
+            if MAE_HW < best_err_HW:
+                best_err_HW = MAE_HW
+                best_trend_HW = i
+                best_seasonal_HW = j
+            #except Exception as e:
+            #    print('Ошибка функции HW_test.')
+            #   err_log(e)
+            #    continue
 
     fitted_model_HW = ExponentialSmoothing(train_data[['av_salary']], trend = best_trend_HW, seasonal = best_seasonal_HW, seasonal_periods = 12).fit()
     test_prediction_HW = fitted_model_HW.forecast(len(test_data))

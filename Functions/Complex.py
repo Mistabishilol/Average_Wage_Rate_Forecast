@@ -13,11 +13,10 @@ def Complex_test(
                 SARIMA_choice,
                 LSTM_choice,
                 SNaive_test_prediction,
-                test_prediction_St_m_,
-                test_prediction_HW,
-                test_prediction_SARIMA,
-                test_prediction_LSTM,
-                LSTM_final
+                St_m_test_prediction,
+                HW_test_prediction,
+                SARIMA_test_prediction,
+                LSTM_test_prediction
                 ):
     '''Функция: тестирование комплексной модели прогнозирования'''
 
@@ -28,21 +27,22 @@ def Complex_test(
         else:
             a = np.nan
         if (auto_choice_models in ['yes', 'да']) or (St_m_choice in ['yes', 'да']):
-            b = test_prediction_St_m_['av_salary'][i]
+            b = St_m_test_prediction['av_salary'][i]
         else:
             b = np.nan
         if (auto_choice_models in ['yes', 'да']) or (HW_choice in ['yes', 'да']):
-            c = test_prediction_HW['av_salary'][i]
+            c = HW_test_prediction['av_salary'][i]
         else:
             c = np.nan
         if (auto_choice_models in ['yes', 'да']) or (SARIMA_choice in ['yes', 'да']):
-            d = test_prediction_SARIMA['av_salary'][i]
+            d = SARIMA_test_prediction['av_salary'][i]
         else:
             d = np.nan
         if (auto_choice_models in ['yes', 'да']) or (LSTM_choice in ['yes', 'да']):
-            e = LSTM_final['av_salary'][i]
+            e = LSTM_test_prediction['av_salary'][i]
         else:
             e = np.nan
+        
         Complex_list.append(np.nanmedian([a, b, c, d, e]))
     
     Complex_test_prediction = pd.DataFrame(data = Complex_list, index = test_data.index, columns = ['av_salary'])
@@ -62,12 +62,11 @@ def Complex_forecast(
                     HW_choice,
                     SARIMA_choice,
                     LSTM_choice,
-                    SNaive_final,
-                    St_m_final,
-                    HW_final,
-                    SARIMA_final,
-                    test_prediction_LSTM,
-                    LSTM_final
+                    SNaive_final_prediction,
+                    St_m_final_prediction,
+                    HW_final_prediction,
+                    SARIMA_final_prediction,
+                    LSTM_final_prediction
                     ):
     '''Функция: комплексная модель прогнозирования.'''
     
@@ -77,25 +76,26 @@ def Complex_forecast(
     Complex_list = []
     for i in range(0, len(forecast_period)):
         if (auto_choice_models in ['yes', 'да']) or (SNaive_choice in ['yes', 'да']):
-            a = SNaive_final['av_salary'][i]
+            a = SNaive_final_prediction['av_salary'][i]
         else:
             a = np.nan
         if (auto_choice_models in ['yes', 'да']) or (St_m_choice in ['yes', 'да']):
-            b = St_m_final['av_salary'][i]
+            b = St_m_final_prediction['av_salary'][i]
         else:
             b = np.nan
         if (auto_choice_models in ['yes', 'да']) or (HW_choice in ['yes', 'да']):
-            c = HW_final['av_salary'][i]
+            c = HW_final_prediction['av_salary'][i]
         else:
             c = np.nan
         if (auto_choice_models in ['yes', 'да']) or (SARIMA_choice in ['yes', 'да']):
-            d = SARIMA_final['av_salary'][i]
+            d = SARIMA_final_prediction['av_salary'][i]
         else:
             d = np.nan
         if (auto_choice_models in ['yes', 'да']) or (LSTM_choice in ['yes', 'да']):
-            e = LSTM_final['av_salary'][i]
+            e = LSTM_final_prediction['av_salary'][i]
         else:
             e = np.nan
+
         Complex_list.append(np.nanmedian([a, b, c, d, e]))
     
     Complex_final = pd.DataFrame(data = Complex_list, index = forecast_period, columns = ['av_salary'])

@@ -40,7 +40,9 @@ def branch_choice(fot_database_dict, all_sections):
     
     ###### Выбор сегмента
     
-    segm_avail = np.unique(all_sections[(all_sections['tb_korr'].isin(tb_choice)) & (all_sections['gosb_korr'].isin(gosb_choice))]['segm_korr'].values)
+    segm_avail = np.unique(all_sections[(all_sections['tb_korr'].isin(tb_choice)) &
+                                        (all_sections['gosb_korr'].isin(gosb_choice))
+                                        ]['segm_korr'].values)
     print('Для выбранных ТБ и ГОСБ доступны следующие сегменты:', *segm_avail, sep=' ')
     segm_choice = input('Сегмент: ').split(' ')
     if segm_choice in [['all'], ['все']]:
@@ -49,15 +51,21 @@ def branch_choice(fot_database_dict, all_sections):
     
     ###### Выбор типа
     
-    types_avail = np.unique(all_sections[(all_sections['tb_korr'].isin(tb_choice)) & (all_sections['gosb_korr'].isin(gosb_choice)) & (all_sections['segm_korr'].isin(segm_choice))]['type'].values)
+    types_avail = np.unique(all_sections[(all_sections['tb_korr'].isin(tb_choice)) &
+                                        (all_sections['gosb_korr'].isin(gosb_choice)) &
+                                        (all_sections['segm_korr'].isin(segm_choice))
+                                        ]['type'].values)
     print('Для выбранных ТБ и ГОСБ доступны следующие типы:', *types_avail, sep=' ')
     type_choice = input('Тип: ').split(' ')
     if type_choice in [['all'], ['все']]:
         type_choice = all_sections['type'].unique()
     
 
-    index_avail = np.unique(all_sections[(all_sections['tb_korr'].isin(tb_choice)) & (all_sections['gosb_korr'].isin(gosb_choice)) & (all_sections['segm_korr'].isin(segm_choice) & (all_sections['type'].isin(type_choice)))]['type'].values)
-
+    index_avail = np.unique(all_sections[(all_sections['tb_korr'].isin(tb_choice)) &
+                                        (all_sections['gosb_korr'].isin(gosb_choice)) &
+                                        (all_sections['segm_korr'].isin(segm_choice) &
+                                        (all_sections['type'].isin(type_choice)))
+                                        ]['type'].values)
     ###### Собираем выбранные ТБ/ГОСБ/Сегменты/Типы в единый атрибут.
     for tb in tb_choice:
         for gosb in gosb_choice:
@@ -94,10 +102,8 @@ def choice_date():
 def choice_models():
     '''Просим пользователя выбрать алгоритмы и их параметры'''
 
-    base_period = ''
-    trend_dict = ''
-    seasonal_dict = ''
-    p_ = d_ = q_ = P_ = D_ = Q_ = [0, 1]    
+    base_period = trend_dict = seasonal_dict = ''
+    SARIMA_p_ = SARIMA_d_ = SARIMA_q_ = SARIMA_P_ = SARIMA_D_ = SARIMA_Q_ = [0, 1]    
 
     auto_choice_models = input('Использовать все алгоритмы прогнозирования с автоматическими настройками? (yes, да) / (no, нет): ')
     if auto_choice_models not in ['yes', 'да']:
@@ -131,26 +137,26 @@ def choice_models():
             if SARIMA_param_auto not in ['yes', 'да']:
                 SARIMA_grid_search = input('Введите yes/да для указания сетки, no/нет для указания конкретных порядков:')
                 if SARIMA_grid_search in ['yes', 'да']:
-                    pdq = input('Введите через пробел правую границу сетки (включительно) для порядков регрессии (p), дифференцирования (d), скользящего среднего (q): ').split(' ')
-                    PDQ = input('Введите через пробел правую границу сетки (включительно) для порядков регрессии (P), дифференцирования (D), скользящего среднего (Q) для сезонности: ').split(' ')
-                    p_ = [x for x in range(0, int(pdq[0])+1) if x < int(pdq[0])+1]
-                    d_ = [x for x in range(0, int(pdq[1])+1) if x < int(pdq[1])+1]
-                    q_ = [x for x in range(0, int(pdq[2])+1) if x < int(pdq[2])+1]
-                    P_ = [x for x in range(0, int(PDQ[0])+1) if x < int(PDQ[0])+1]
-                    D_ = [x for x in range(0, int(PDQ[1])+1) if x < int(PDQ[1])+1]
-                    Q_ = [x for x in range(0, int(PDQ[2])+1) if x < int(PDQ[2])+1]               
+                    SARIMA_pdq = input('Введите через пробел правую границу сетки (включительно) для порядков регрессии (p), дифференцирования (d), скользящего среднего (q): ').split(' ')
+                    SARIMA_PDQ = input('Введите через пробел правую границу сетки (включительно) для порядков регрессии (P), дифференцирования (D), скользящего среднего (Q) для сезонности: ').split(' ')
+                    SARIMA_p_ = [x for x in range(0, int(SARIMA_pdq[0])+1) if x < int(SARIMA_pdq[0])+1]
+                    SARIMA_d_ = [x for x in range(0, int(SARIMA_pdq[1])+1) if x < int(SARIMA_pdq[1])+1]
+                    SARIMA_q_ = [x for x in range(0, int(SARIMA_pdq[2])+1) if x < int(SARIMA_pdq[2])+1]
+                    SARIMA_P_ = [x for x in range(0, int(SARIMA_PDQ[0])+1) if x < int(SARIMA_PDQ[0])+1]
+                    SARIMA_D_ = [x for x in range(0, int(SARIMA_PDQ[1])+1) if x < int(SARIMA_PDQ[1])+1]
+                    SARIMA_Q_ = [x for x in range(0, int(SARIMA_PDQ[2])+1) if x < int(SARIMA_PDQ[2])+1]               
                 else:
-                    pdq = input('Введите через пробел порядок регрессии (p), дифференцирования (d), скользящего среднего (q) для временного ряда: ').split(' ')
-                    PDQ = input('Введите через пробел порядок регрессии (P), дифференцирования (D), скользящего среднего (Q) для сезонности: ').split(' ')
-                    p_ = [int(pdq[0])]
-                    d_ = [int(pdq[1])]
-                    q_ = [int(pdq[2])]
-                    P_ = [int(PDQ[0])]
-                    D_ = [int(PDQ[1])]
-                    Q_ = [int(PDQ[2])]
+                    SARIMA_pdq = input('Введите через пробел порядок регрессии (p), дифференцирования (d), скользящего среднего (q) для временного ряда: ').split(' ')
+                    SARIMA_PDQ = input('Введите через пробел порядок регрессии (P), дифференцирования (D), скользящего среднего (Q) для сезонности: ').split(' ')
+                    SARIMA_p_ = [int(SARIMA_pdq[0])]
+                    SARIMA_d_ = [int(SARIMA_pdq[1])]
+                    SARIMA_q_ = [int(SARIMA_pdq[2])]
+                    SARIMA_P_ = [int(SARIMA_PDQ[0])]
+                    SARIMA_D_ = [int(SARIMA_PDQ[1])]
+                    SARIMA_Q_ = [int(SARIMA_PDQ[2])]
         else:
             SARIMA_param_auto = 'no'
-            p_ = d_ = q_ = P_ = D_ = Q_ = [0, 1]
+            SARIMA_p_ = SARIMA_d_ = SARIMA_q_ = SARIMA_P_ = SARIMA_D_ = SARIMA_Q_ = [0, 1]
 
         LSTM_choice = input('Использовать нейросеть LSTM? (yes, да) / (no, нет): ')
 
@@ -171,10 +177,10 @@ def choice_models():
             'base_period': base_period,
             'trend_dict': trend_dict,
             'seasonal_dict': seasonal_dict,
-            'p_': p_,
-            'd_': d_,
-            'q_': q_,
-            'P_': P_,
-            'D_': D_,
-            'Q_': Q_
+            'SARIMA_p_': SARIMA_p_,
+            'SARIMA_d_': SARIMA_d_,
+            'SARIMA_q_': SARIMA_q_,
+            'SARIMA_P_': SARIMA_P_,
+            'SARIMA_D_': SARIMA_D_,
+            'SARIMA_Q_': SARIMA_Q_
             }
