@@ -44,22 +44,22 @@ def St_m_test(train_data, test_data, av_salary_fact, base_period):
         i = i + 1
         j = i
 
-    test_prediction_St_m = []
+    St_m_test_prediction = []
     base = train_base_median[0]
     a = 0
 
     for i in range(0, len(test_data)):
         if i - a * 12 < 12:
-            test_prediction_St_m.append(base * seasonal_kf_med[i - a * 12])
+            St_m_test_prediction.append(base * seasonal_kf_med[i - a * 12])
         else:
             a += 1
-            base = np.median(test_prediction_St_m[-base_period:])
-            test_prediction_St_m.append(base * seasonal_kf_med[i - a * 12])
+            base = np.median(St_m_test_prediction[-base_period:])
+            St_m_test_prediction.append(base * seasonal_kf_med[i - a * 12])
 
-    test_prediction_St_m_ = pd.DataFrame(data = test_prediction_St_m, index = test_data.index, columns = ['av_salary']).fillna(0)
-    St_m_MAPE = mean_absolute_error(test_data['av_salary'], test_prediction_St_m_['av_salary']) / np.mean(test_data)[0]
+    St_m_test_prediction = pd.DataFrame(data = St_m_test_prediction, index = test_data.index, columns = ['av_salary']).fillna(0)
+    St_m_MAPE = mean_absolute_error(test_data['av_salary'], St_m_test_prediction['av_salary']) / np.mean(test_data)[0]
 
-    return test_prediction_St_m_, St_m_MAPE
+    return St_m_test_prediction, St_m_MAPE
 
 
 # Функция: прогнозирование стандартным алгоритмом (сезонность к базовому периоду):
@@ -105,18 +105,18 @@ def St_m_forecast(train_data, test_data, av_salary_fact, base_period, forecast_p
         i = i + 1
         j = i
 
-    forecast_St_m = []
+    St_m_forecast = []
     base = train_base_median[0]
     a = 0
 
     for i in range(0, len(forecast_period)):
         if i - a * 12 < 12:
-            forecast_St_m.append(base * seasonal_kf_med[i - a * 12])
+            St_m_forecast.append(base * seasonal_kf_med[i - a * 12])
         else:
             a += 1
-            base = np.median(forecast_St_m[-base_period:])
-            forecast_St_m.append(base * seasonal_kf_med[i - a * 12])
+            base = np.median(St_m_forecast[-base_period:])
+            St_m_forecast.append(base * seasonal_kf_med[i - a * 12])
 
-    forecast_St_m_ = pd.DataFrame(data = forecast_St_m, index = forecast_period, columns = ['av_salary'])
+    St_m_forecast = pd.DataFrame(data = St_m_forecast, index = forecast_period, columns = ['av_salary'])
     
-    return forecast_St_m_
+    return St_m_forecast

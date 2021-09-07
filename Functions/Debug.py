@@ -2,6 +2,8 @@ import logging
 import datetime
 
 def err_log(err):
+    '''Функция для записи ошибки в лог.'''
+    
     now = datetime.datetime.now().strftime("%d.%m.%Y %H-%M-%S")
 
     logging.basicConfig(filename='./Errors/Errors.txt',
