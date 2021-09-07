@@ -9,7 +9,6 @@ import datetime
 from data_io import data_load, periods_choice, forecasts_to_dataframe, save_file, create_folders
 from SNaive import SNaive_test, SNaive_forecast 
 from St_m import St_m_test, St_m_forecast
-from St_m_add import St_m_test_add, St_m_forecast_add
 from HW import HW_test, HW_forecast
 from SARIMA import SARIMA_test, SARIMA_forecast
 from lstm import LSTM_test, LSTM_forecast
