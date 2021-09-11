@@ -14,19 +14,19 @@ from SARIMA import SARIMA_test, SARIMA_forecast
 from lstm import LSTM_test, LSTM_forecast
 from Complex import Complex_test, Complex_forecast
 from user_input import branch_choice, choice_date, choice_models
-from plot_graph import plot_graph
+from plot_graph import plot_graph, plot_common_graph
 
 
-def forecast_main():
+def forecast_main(endog_var_avg_salary=False, make_single_plots=True, make_common_plot=True):
     '''Основная функция для построения прогнозов.'''
 
     ### 1. Загружаем данные из базы планирования. ###
-    data_loaded = data_load()   
+    data_loaded = data_load(endog_var_avg_salary)   
     forecasts_table = data_loaded['forecasts_table']
     fot_database_dict = data_loaded['fot_database_dict']
     all_sections = data_loaded['all_sections']
     fot_database = data_loaded['fot_database']
-
+    common_graph_dict = {}
 
     ### 2. Взаимодействие с пользователем. ###
     # Просим пользователя выбрать отделение:
@@ -80,22 +80,27 @@ def forecast_main():
             SNaive_MAPE = SNaive_results['SNaive_MAPE']
             SNaive_final_prediction = SNaive_forecast(train_data, test_data, av_salary_fact, forecast_period)
 
-            # Наивный сезонный алгоритм - график
-            plot_graph(
-                        model_name='SNaive',
-                        path=folders['graphs_folder_path'],
-                        train_data=train_data,
-                        test_data=test_data,
-                        chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
-                        test_results=SNaive_test_prediction,
-                        prediction_results=SNaive_final_prediction,
-                        MAPE=SNaive_MAPE
-                        )
+            if make_single_plots:
+                # Наивный сезонный алгоритм - график
+                plot_graph(
+                            model_name='SNaive',
+                            path=folders['graphs_folder_path'],
+                            train_data=train_data,
+                            test_data=test_data,
+                            chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
+                            test_results=SNaive_test_prediction,
+                            prediction_results=SNaive_final_prediction,
+                            MAPE=SNaive_MAPE
+                            )
+            
+            if make_common_plot:
+                # Словарь для построения общего графика.
+                common_graph_dict['SNaive'] = [SNaive_test_prediction, SNaive_MAPE, SNaive_final_prediction]
+
         else:
             SNaive_test_prediction = pd.DataFrame(data = [], index = test_data.index, columns = ['av_salary'])
             SNaive_MAPE = np.nan
             SNaive_final_prediction = pd.DataFrame(data = [], index = forecast_period, columns = ['av_salary'])
-
 
 
         ### 3.2 Стандартный алгоритм база - сезонность. ###
@@ -121,17 +126,22 @@ def forecast_main():
             St_m_MAPE = St_m_results[1]
             St_m_final_prediction = St_m_forecast(train_data, test_data, av_salary_fact, St_m_best_base_period, forecast_period)
 
-            # Стандартный алгоритм база - сезонность - график.
-            plot_graph(
-                        model_name='St_m',
-                        path=folders['graphs_folder_path'],
-                        train_data=train_data,
-                        test_data=test_data,
-                        chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
-                        test_results=St_m_test_prediction,
-                        prediction_results=St_m_final_prediction,
-                        MAPE=St_m_MAPE
-                        )
+            if make_single_plots:
+                # Стандартный алгоритм база - сезонность - график.
+                plot_graph(
+                            model_name='St_m',
+                            path=folders['graphs_folder_path'],
+                            train_data=train_data,
+                            test_data=test_data,
+                            chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
+                            test_results=St_m_test_prediction,
+                            prediction_results=St_m_final_prediction,
+                            MAPE=St_m_MAPE
+                            )
+            if make_common_plot:
+                # Словарь для построения общего графика.
+                common_graph_dict['St_m'] = [St_m_test_prediction, St_m_MAPE, St_m_final_prediction]
+
         else:
             St_m_test_prediction = pd.DataFrame(data = [], index = test_data.index, columns = ['av_salary'])
             St_m_MAPE = np.nan
@@ -155,17 +165,23 @@ def forecast_main():
             HW_best_trend = HW_results['best_trend_HW']
             HW_best_seasonal = HW_results['best_seasonal_HW']
 
+            if make_single_plots:
             # Тройное экспоненциальное сглаживание - график.       
-            plot_graph(
-                        model_name='HW',
-                        path=folders['graphs_folder_path'],
-                        train_data=train_data,
-                        test_data=test_data,
-                        chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
-                        test_results=HW_test_prediction,
-                        prediction_results=HW_final_prediction,
-                        MAPE=HW_MAPE
-                        )
+                plot_graph(
+                            model_name='HW',
+                            path=folders['graphs_folder_path'],
+                            train_data=train_data,
+                            test_data=test_data,
+                            chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
+                            test_results=HW_test_prediction,
+                            prediction_results=HW_final_prediction,
+                            MAPE=HW_MAPE
+                            )
+
+            if make_common_plot:
+                # Словарь для построения общего графика.
+                common_graph_dict['HW'] = [HW_test_prediction, HW_MAPE, HW_final_prediction]
+
         else:
             HW_test_prediction = pd.DataFrame(data = [], index = test_data.index, columns = ['av_salary'])
             HW_MAPE = np.nan
@@ -224,17 +240,23 @@ def forecast_main():
                                                     forecast_period
                                                     )
 
-            # SARIMA: график.
-            plot_graph(
-                        model_name='SARIMA',
-                        path=folders['graphs_folder_path'],
-                        train_data=train_data,
-                        test_data=test_data,
-                        chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
-                        test_results=SARIMA_test_prediction,
-                        prediction_results=SARIMA_final_prediction,
-                        MAPE=SARIMA_MAPE
-                        )
+            if make_single_plots:
+                # SARIMA: график.
+                plot_graph(
+                            model_name='SARIMA',
+                            path=folders['graphs_folder_path'],
+                            train_data=train_data,
+                            test_data=test_data,
+                            chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
+                            test_results=SARIMA_test_prediction,
+                            prediction_results=SARIMA_final_prediction,
+                            MAPE=SARIMA_MAPE
+                            )
+            
+            if make_common_plot:
+                # Словарь для построения общего графика.
+                common_graph_dict['SARIMA'] = [SARIMA_test_prediction, SARIMA_MAPE, SARIMA_final_prediction]
+
         else:
             SARIMA_test_prediction = pd.DataFrame(data = [], index = test_data.index, columns = ['av_salary'])
             SARIMA_MAPE = np.nan
@@ -254,7 +276,8 @@ def forecast_main():
             LSTM_MAPE = LSTM_test_results['LSTM_MAPE']
             LSTM_final_prediction = LSTM_forecast(train_data, test_data, av_salary_fact, forecast_period)
 
-         # LSTM: график.
+        if make_single_plots:
+            # LSTM: график.
             plot_graph(
                         model_name='LSTM',
                         path=folders['graphs_folder_path'],
@@ -265,6 +288,11 @@ def forecast_main():
                         prediction_results=LSTM_final_prediction,
                         MAPE=LSTM_MAPE
                         )
+
+            if make_common_plot:
+                # Словарь для построения общего графика.
+                common_graph_dict['LSTM'] = [LSTM_test_prediction, LSTM_MAPE, LSTM_final_prediction]
+
         else:
             LSTM_test_prediction = pd.DataFrame(data = [], index = test_data.index, columns = ['av_salary'])
             LSTM_MAPE = np.nan
@@ -303,17 +331,22 @@ def forecast_main():
                                         SARIMA_final_prediction,
                                         LSTM_final_prediction
                                         )
-        # Complex: комплексный прогноз - график.
-        plot_graph(
-                    model_name='Complex',
-                    path=folders['graphs_folder_path'],
-                    train_data=train_data,
-                    test_data=test_data,
-                    chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
-                    test_results=Complex_test_prediction,
-                    prediction_results=Complex_final_prediction,
-                    MAPE=Complex_MAPE
-                    )
+        if make_single_plots:
+            # Complex: комплексный прогноз - график.
+            plot_graph(
+                        model_name='Complex',
+                        path=folders['graphs_folder_path'],
+                        train_data=train_data,
+                        test_data=test_data,
+                        chosen_tb_gosb_segm_type = chosen_tb_gosb_segm_type,
+                        test_results=Complex_test_prediction,
+                        prediction_results=Complex_final_prediction,
+                        MAPE=Complex_MAPE
+                        )
+
+        if make_common_plot:
+            # Словарь для построения общего графика.
+            common_graph_dict['Complex'] = [Complex_test_prediction, Complex_MAPE, Complex_final_prediction]
 
         ### 3.7 Сохраняем прогноз в датафрейм. ###
         forecasts_table = forecasts_to_dataframe(
@@ -346,6 +379,16 @@ def forecast_main():
                                                 SARIMA_best_Q=SARIMA_best_Q,
                                                 St_m_best_base_period=St_m_best_base_period
                                                 )
+
+        if make_common_plot:
+        # Строим общий график.
+            plot_common_graph(
+                            path=folders['graphs_folder_path'],
+                            train_data=train_data,
+                            test_data=test_data,
+                            chosen_tb_gosb_segm_type=chosen_tb_gosb_segm_type,
+                            common_graph_dict=common_graph_dict
+                            )
 
         # Уведомляем пользователя об успешном завершении работы с сегментом.
         now = datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S")
