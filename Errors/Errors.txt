@@ -337,3 +337,4 @@
 2021-09-07 22:13:22,017 ERROR Debug Input contains NaN, infinity or a value too large for dtype('float64').
 2021-09-07 22:13:22,019 ERROR Debug operands could not be broadcast together with shapes (0,) (12,) 
 2021-09-07 22:13:22,021 ERROR Debug operands could not be broadcast together with shapes (0,) (12,) 
+2021-09-11 20:41:50,969 ERROR Debug LU decomposition error.

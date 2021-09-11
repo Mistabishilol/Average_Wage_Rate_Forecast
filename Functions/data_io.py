@@ -5,7 +5,7 @@ from pathlib import Path
 
 ########## Функция: загрузка данных из базы планирования ##########
 
-def data_load():
+def data_load(endog_var_avg_salary):
     '''Функция для загрузки данных из базы планирования.'''
 
     # Загрузка базы прогнозирования.
@@ -29,28 +29,30 @@ def data_load():
     except:
         print('Ошибка определения сегментов.')
 
-    # Загрузка номильной средней ЗП из файла.
-    try:
-        df_avg_nominal_sal = pd.read_excel('./External variables/Nominal average salary.xlsx', parse_dates=['report_date'], index_col='report_date')
-        
-    
-        fot_database = fot_database.reset_index()
-        df_avg_nominal_sal = df_avg_nominal_sal.reset_index()
-        cols_merge = ['report_date', 'tb_korr', 'gosb_korr']
-        fot_database = pd.merge(left=fot_database,
-                                right=df_avg_nominal_sal,
-                                how='left',
-                                left_on=cols_merge,
-                                right_on=cols_merge
-                                )
+    # Загрузка номильной средней ЗП из файла
+    if endog_var_avg_salary:
+        try:
+            df_avg_nominal_sal = pd.read_excel('./External variables/Nominal average salary.xlsx', parse_dates=['report_date'], index_col='report_date')
 
-        fot_database = fot_database.set_index('report_date')
-        print('Данные по номинальной средней ЗП успешно загружены.')
-    except FileNotFoundError:
-        print('Данные по номинальной средней ЗП не были загружены, так как файл отсутствует.')
-        df_avg_nominal_sal = ''
+            fot_database = fot_database.reset_index()
+            df_avg_nominal_sal = df_avg_nominal_sal.reset_index()
+            cols_merge = ['report_date', 'tb_korr', 'gosb_korr']
+            fot_database = pd.merge(left=fot_database,
+                                    right=df_avg_nominal_sal,
+                                    how='left',
+                                    left_on=cols_merge,
+                                    right_on=cols_merge
+                                    )
 
-    
+            fot_database = fot_database.set_index('report_date')
+            print('Данные по номинальной средней ЗП успешно загружены.')
+        except FileNotFoundError:
+            print('Данные по номинальной средней ЗП не были загружены, так как файл отсутствует.')
+            df_avg_nominal_sal = ''
+    else:
+        print('Загрузка данных по номинальной средней ЗП отключена.')
+
+
     # Создаем пустой датафрейм.
     cols = [
             'SNaive',
@@ -86,7 +88,8 @@ def data_load():
     return {'fot_database': fot_database,
             'fot_database_dict': fot_database_dict,
             'forecasts_table': forecasts_table,
-            'all_sections': all_sections}
+            'all_sections': all_sections
+            }
 
 
 ########## Функция: определение границ периодов ##########
