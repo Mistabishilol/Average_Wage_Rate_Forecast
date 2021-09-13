@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_absolute_error
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import LSTM
-from keras.preprocessing.sequence import TimeseriesGenerator
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import LSTM
+from tensorflow.keras.preprocessing.sequence import TimeseriesGenerator
 
 
 def LSTM_test(train_data, test_data, av_salary_fact):
